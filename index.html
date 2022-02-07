@@ -1272,7 +1272,7 @@
     </ul>
     <h2><a name="工作经历实习经历" class="md-header-anchor"></a><span>工作经历/实习经历</span></h2>
     <h3><a name="xxx-公司-201x-年-x-月--201x-年-x-月-）" class="md-header-anchor"></a><span>漯河市郾城包商村镇银行有限责任公司 （2014 年 1 月 ~
-        2020 年 3 月 ）</span></h3>
+        至今 ）</span></h3>
     <ul>
       
     </ul>
@@ -1285,21 +1285,27 @@
     <ul>
       <li><strong><span>项目描述</span></strong><span> : 2019年受同学委托兼职开发B2C电商系统，该系统采用前后端分离架构设计，一共分为5个子系统，分别是微商城后台系统、商城管理前后台系统、商城核心系统、业务上具备微商城所有的功能，包括微信支付。技术架构上面后台项目采用SpringBoot、SpringMVC和MyBatis组成的SSM框架、并且融合了Shiro、Swagger等技术。前端采用了VUE+ElementUI技术架构，小程序采用的微信原生框架。该系统采用docker容器化集群部署。本人主要负责商品系统和订单系统的后台开发,由于商城系统中商品种类繁多并且各个商品规格又不同，商品模块在建模上就很复杂，商品信息要拆分成spu和sku两种，以便进行统一管理。通过开发该系统使我对电商项目的开发有了一定的经验。</span></li>
     </ul>
-    <h3><a name="xxx-系统" class="md-header-anchor"></a><span>微商城秒杀系统</span></h3>
-    <ul>
+    <!-- <ul>
       <li><strong><span>项目描述</span></strong><span> : 为了满足日后微商城的秒杀业务，特单独开发一套秒杀系统，该系统采用SpringBoot、SpringMVC、MyBatis，数据库采用MySQL,缓存采用Redis。由于秒杀系统对系统较为特殊，需要做到高并发、高性能和高可用，对我来说也是一次挑战。系统采用分布式session来解决集群和分布式环境中session共享问题，通过Jmeter压力测试秒杀接口时，观察系统进程发现MySQL负载过高, 由此判断整体系统瓶颈就在MySQL，随即对系统做出优化，利用对象缓存、预减库存等方式来降低MySQL负载，优化过后MySQL负载降低，系统吞吐量随即翻倍。同时发现商品库存有超卖现象，秒杀商品库存为负数，通过调试系统后发现为下订单时多个请求同时对商品表库存进行了更新修改，导致了超卖，发现问题后，经过研究采用了MySQL的乐观锁完美解决了系统超卖问题(由于大部分请求会更新失败，为了减少这些没有秒杀到商品的请求对数据库的压力，现又对此进行了优化，采用Redis乐观锁解决，这样可以最大限度的减少MySQL负载，可以保证只有秒杀到的请求才能去数据库更新库存)。后期又通过隐藏秒杀URL地址和接口限流等方式对系统进行优化。</span></li>
+    </ul> -->
+    <h2><a name="开源项目" class="md-header-anchor"></a><span>开源项目</span></h2>
+    <h3><a name="xxx-系统" class="md-header-anchor"></a><span>lite_shop微商铺</span></h3>
+    <ul>
+    <li><strong><span>项目描述</span></strong><span> : 鉴于之前开发电商项目的经验，为了帮助更多人能够更好的学习电商项目整体业务及全栈技术应用，特开发一套基于springboot + vue前后端分离的完整小型电商系统。
+      lite_shop是一套小型电商系统，该项目为B2C模式电商系统，包括前台商城系统和后台管理系统，基于springboot + vue打造。后台管理系统包含会员管理、商品管理、订单管理、运营管理、系统管理、统计报表、后台用户管理、权限管理、系统设置等模块。前台管理系统包含首页、商品推荐、商品搜索、专题推荐、用户下单、支付等一套完整电商流程。
+      <p>github项目地址:<a href="https://github.com/ohayou0725/lite_shop" target="_blank">https://github.com/ohayou0725/lite_shop</a></p>
+    </span></li>
     </ul>
-    
     <h2><a name="技能清单" class="md-header-anchor"></a><span>技能清单</span></h2>
     <ul>
       <li><strong><span>Linux</span></strong><span> : 掌握Linux系统基本操作命令</span></li>
-      <li><strong><span>Java</span></strong><span>：熟练掌握 Java 基础知识、Java 多线程、集合框架</span></li>
+      <li><strong><span>Java</span></strong><span>：熟练掌握 Java 基础知识、Java 多线程、集合框架等</span></li>
       <li><strong><span>数据库</span></strong><span>：熟练掌握 MySQL 数据库以及常见索引优化手段，掌握Redis基本操作</span></li>
       <li><strong><span>框架</span></strong><span>：熟练使用 Spring、Spring MVC、 SpringBoot、MyBatis
           等框架</span></li>
-      <li><strong><span>分布式</span></strong><span>：熟悉SpinrgCloud五大核心组件 消息队列 RabbitMQ</span></li>
-      <li><strong><span>工具</span></strong><span>：熟练使用 Maven、Docker 等常用开发工具</span></li>
-      <li><strong><span>前端</span></strong><span>：了解 HTML、CSS、JavaScript、JQuery、BootStrap等</span></li>
+      <li><strong><span>分布式</span></strong><span>：熟悉SpinrgCloud中分布式组件  Dubbo Zookeeper等分布式开发框架，  消息队列：RabbitMQ</span></li>
+      <li><strong><span>工具</span></strong><span>：熟练使用 Maven、Tomcat web容器、Docker 等常用开发工具</span></li>
+      <li><strong><span>前端</span></strong><span>：了解 HTML、CSS、JavaScript、JQuery、Vue等</span></li>
     </ul>
     <h2><a name="个人评价" class="md-header-anchor"></a><span>个人评价</span></h2>
     <p><span>热爱编程，对IT领域的软件开发和设计工作有浓厚的兴趣，能够快速的适应各种工作环境，具有良好的分析能力，自学能力，适应能力，为人诚恳，踏实能干，认真负责，敢于面对苦难和挑战。</span></p>
